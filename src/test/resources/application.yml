@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:wave;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+
+wave:
+  base-url: http://localhost:0
+  api-key: test-api-key
+  signing-secret: test-signing-secret
+  success-url: http://localhost/succes
+  error-url: http://localhost/erreur
